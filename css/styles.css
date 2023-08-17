@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* POKEDEX TABLE */
+#pokedex {
+    display: table;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#pokedex th, #pokedex td {
+    vertical-align: middle;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #000;
+}
+
+
+.caught {
+    background-color: #009966;
+}
+
+
+/* TYPE COLORS */
+.type {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.type-normal {
+    background-color: gray;
+}
+.type-fire {
+    background-color: firebrick;
+}
+.type-water {
+    background-color: blue;
+}
+.type-electric {
+    background-color: darkgoldenrod;
+}
+.type-grass {
+    background-color: darkgreen;
+}
+.type-ice {
+    background-color: lightcyan;
+}
+.type-fighting {
+    background-color: brown;
+}
+.type-poison {
+    background-color: purple;
+}
+.type-ground {
+    background-color: sienna;
+}
+.type-flying {
+    background-color: deepskyblue;
+}
+.type-psychic {
+    background-color: orchid;
+}
+.type-bug {
+    background-color: springgreen;
+}
+.type-rock {
+    background-color: tan;
+}
+.type-ghost {
+    background-color: midnightblue;
+}
+.type-dragon {
+    background-color: steelblue;
+}
