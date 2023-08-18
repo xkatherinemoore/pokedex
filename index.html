@@ -23,16 +23,36 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-    
+
 <body>
     <header>
-        <nav>Pokedex</nav>
+        <div id="brand">
+            <a href="index.html">
+                <img src="images/International_Pokémon_logo.svg.png" alt="Pokemon-logo">
+                <h1>Game Progress Tracker</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" class="current" active>Home</a>
+            <a href="pokedex.html">Pokedex</a>
+            <a href="gymleader.html">Gym Leaders</a>
+            <a href="project.html">Project</a>
+        </nav>
     </header>
 
     <section>
         <div id="summary-box">
             <div id="game-info">
-
+                <fieldset>
+                    <p>Choose your game:</p>
+                    <input type="radio" value="red" name="game-name" id="game-red"><label for="game-red">Pokemon Red</label>
+                    <input type="radio" value="blue" name="game-name" id="game-blue"><label for="game-blue">Pokemon Blue</label>
+                    <input type="radio" value="yellow" name="game-name" id="game-yellow"><label for="game-yellow">Pokemon Yellow</label>
+                    <input type="radio" value="firered" name="game-name" id="game-firered"><label for="game-firered">Pokemon FireRed</label>
+                    <input type="radio" value="leafgreen" name="game-name" id="game-leafgreen"><label for="game-leafgreen">Pokemon LeafGreen</label>
+                    <input type="radio" value="lgpikachu" name="game-name" id="game-lgpikachu"><label for="game-lgpikachu">Let's Go, Pikachu!</label>
+                    <input type="radio" value="lgeevee" name="game-name" id="game-lgeevee"><label for="game-lgeevee">Let's Go, Eevee!</label>
+                </fieldset>
             </div>
             <div id="summary-badges">
 
@@ -56,12 +76,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="images/pokeball_icon_gs.svg"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </section>
-    
+
 
     <footer>
         <p>All images were taken from <a href="https://pokemondb.net/">Pokemon Database</a>.</p>
@@ -70,6 +96,7 @@
     </footer>
 
     <!--JS-->
-    <script src="js/main.js"></script>    
+    <script src="js/main.js"></script>
 </body>
+
 </html>
