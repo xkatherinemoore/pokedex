@@ -29,7 +29,7 @@
         <div id="brand">
             <a href="index.html">
                 <img src="images/International_Pokémon_logo.svg.png" alt="Pokemon-logo">
-                <h1>Game Progress Tracker</h1>
+                <h1>Progress Tracker & Resource</h1>
             </a>
         </div>
         <nav>
@@ -43,36 +43,60 @@
     <section>
         <div id="summary-box">
             <div id="game-info">
+                <h2 class="text-center">Game Version</h2>
                 <fieldset>
-                    <p>Choose your game:</p>
-                    <input type="radio" value="red" name="game-name" id="game-red"><label for="game-red">Pokemon Red</label>
-                    <input type="radio" value="blue" name="game-name" id="game-blue"><label for="game-blue">Pokemon Blue</label>
-                    <input type="radio" value="yellow" name="game-name" id="game-yellow"><label for="game-yellow">Pokemon Yellow</label>
-                    <input type="radio" value="firered" name="game-name" id="game-firered"><label for="game-firered">Pokemon FireRed</label>
-                    <input type="radio" value="leafgreen" name="game-name" id="game-leafgreen"><label for="game-leafgreen">Pokemon LeafGreen</label>
-                    <input type="radio" value="lgpikachu" name="game-name" id="game-lgpikachu"><label for="game-lgpikachu">Let's Go, Pikachu!</label>
+                    <input type="radio" value="red" name="game-name" id="game-red"><label for="game-red">Pokemon Red</label><br>
+                    <input type="radio" value="blue" name="game-name" id="game-blue"><label for="game-blue">Pokemon Blue</label><br>
+                    <input type="radio" value="yellow" name="game-name" id="game-yellow"><label for="game-yellow">Pokemon Yellow</label><br>
+                    <input type="radio" value="firered" name="game-name" id="game-firered"><label for="game-firered">Pokemon FireRed</label><br>
+                    <input type="radio" value="leafgreen" name="game-name" id="game-leafgreen"><label for="game-leafgreen">Pokemon LeafGreen</label><br>
+                    <input type="radio" value="lgpikachu" name="game-name" id="game-lgpikachu"><label for="game-lgpikachu">Let's Go, Pikachu!</label><br>
                     <input type="radio" value="lgeevee" name="game-name" id="game-lgeevee"><label for="game-lgeevee">Let's Go, Eevee!</label>
                 </fieldset>
             </div>
-            <div id="summary-badges">
-
+            <hr>
+            <div class="text-center" id="summary-badges">
+                <h2 class="text-center">Current Badges</h2>
+                <div id="badge-1"><p>Boulder Badge <br> Pewter City</p></div>
+                <div id="badge-2"><p>Cascade Badge <br> Cerulean City</p></div>
+                <div id="badge-3"><p>Thunder Badge <br> Vermillion City</p></div>
+                <div id="badge-4"><p>Rainbow Badge <br> Celadon City</p></div>
+                <div id="badge-5"><p>Soul Badge <br> Fuchsia City</p></div>
+                <div id="badge-6"><p>Marsh Badge <br> Saffron City</p></div>
+                <div id="badge-7"><p>Volcano Badge <br> Cinnabar Island</p></div>
+                <div id="badge-8"><p>Earth Badge <br> Viridian City</p></div>
+                <p class="text-center">Click on the badge name to add it.</p>
             </div>
-            <div id="pokemon-total">
-
+            <hr>
+            <div class="text-center" id="summary-pokemon">
+                <h2>Current Pokemon</h2>
+                <div>
+                    <h3>Total Pokemon:</h3>
+                    <p id="total-count"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>Available in Current Game Version:</h3>
+                    <p id="no-trade-count"></p>
+                </div>
+                <hr>
+                <div>
+                    <h3>Require Trade:</h3>
+                    <p id="trade-count"></p>
+                </div>
             </div>
         </div>
     </section>
 
     <section>
         <div>
-            <table id="pokedex">
+            <table id="current-pokedex">
                 <thead>
                     <tr>
                         <th>Picture</th>
                         <th>No.</th>
                         <th>Name</th>
                         <th>Type</th>
-                        <th>Pokeball</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -90,7 +114,6 @@
 
 
     <footer>
-        <p>All images were taken from <a href="https://pokemondb.net/">Pokemon Database</a>.</p>
         <p>Pokemon images & names &copy; 1995-2023 Nintendo / Game Freak</p>
         <p>Website Design &copy; 2023 Katherine Moore</p>
     </footer>
