@@ -5,13 +5,53 @@
 body {
     font-family: 'Lato', sans-serif;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    max-width: 1100px;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+/* Header/Navbar */
+header, #brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
 }
 
+#brand img {
+    max-width: 200px;
+    display: inherit;
+    padding-right: 10px;
+}
+#brand h1, #brand a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 28px;
+    display: inherit;
+}
+
+header nav {
+    display: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200px;
+    margin: auto 5px;
+    padding: 10px;
+}
+nav a:hover {
+    font-style: italic;
+}
+nav a.current {
+    background-color: #2e67b0;
+    color: #f2c304;
+}
 /* POKEDEX TABLE */
 #pokedex {
     display: table;
