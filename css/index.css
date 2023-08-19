@@ -7,6 +7,21 @@
     This page contains stylings specific to index.html
 */
 /* ABOUT SECTION */
+#about {
+    border: 1px solid #2e67b0;
+    padding: 10px;
+}
+#close-about, #open-about {
+    float: right;
+    border: none;
+    background-color: #2e67b0;
+    color: #f2c304;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 200px;
+    padding: 5px;
+}
+
 
 /* SUMMARY BOX */
 #summary-box {
