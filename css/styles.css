@@ -1,10 +1,20 @@
+/* 
+    NAME: Katherine Moore
+    MEID: KAT2341012
+    DATE: 08/16/2023
+    FINAL PROJECT
+
+    This page contains stylings used throughout website
+*/
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    margin: auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -42,7 +52,6 @@ header, #brand {
 header nav {
     display: inherit;
 }
-
 nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -58,48 +67,9 @@ nav a.current {
     color: #f2c304;
 }
 
-/* SUMMARY BOX */
-#summary-box {
-    border: 3px solid #2e67b0;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
-}
 
-#summary-box fieldset {
-    border: none;
-    line-height: 1.5rem;
-}
 
-#summary-badges {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    max-width: 500px;
-}
-#summary-badges h2, #summary-badges p {
-    flex-basis: 100%;
-}
-#summary-badges div {
-    width: 150px;
-    height: 150px;
-    text-align: center;
-}
-
-#summary-pokemon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    max-width: 200px;
-}
-
-/* POKEDEX TABLE */
+/* TABLE */
 table {
     display: table;
     border-collapse: collapse;
