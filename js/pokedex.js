@@ -1168,14 +1168,15 @@ const pokedex = [];
 for (let i = 0; i < pokemonNames.length; i++) {
     
     //Create an array of booleans whether pokemon is in game
-    let version;
-    pokemonNamesByGameVersion['red'].includes(pokemonNames[i]) ? version[0] = true : version[0] = false;
-    pokemonNamesByGameVersion['blue'].includes(pokemonNames[i]) ? version[1] = true : version[1] = false;
-    pokemonNamesByGameVersion['yellow'].includes(pokemonNames[i]) ? version[2] = true : version[2] = false;
-    pokemonNamesByGameVersion['leafgreen'].includes(pokemonNames[i]) ? version[3] = true : version[3] = false;
-    pokemonNamesByGameVersion['firered'].includes(pokemonNames[i]) ? version[4] = true : version[4] = false;
-    pokemonNamesByGameVersion['lgpikachu'].includes(pokemonNames[i]) ? version[5] = true : version[5] = false;
-    pokemonNamesByGameVersion['lgeevee'].includes(pokemonNames[i]) ? version[6] = true : version[6] = false;
+    let version = [];
+
+    pokemonNamesByGameVersion['red'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
+    pokemonNamesByGameVersion['blue'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
+    pokemonNamesByGameVersion['yellow'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
+    pokemonNamesByGameVersion['leafgreen'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
+    pokemonNamesByGameVersion['firered'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
+    pokemonNamesByGameVersion['lgpikachu'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
+    pokemonNamesByGameVersion['lgeevee'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
 
     //Create pokemon objects and add to pokedex array
     pokedex.push(
