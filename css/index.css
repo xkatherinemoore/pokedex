@@ -32,18 +32,29 @@
     padding: 20px;
 }
 
-#summary-box fieldset {
+#game-info, #summary-badges, #summary-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+#game-info {
+    flex-direction: column;
+    max-width: 200px;
+}
+#game-info fieldset {
     border: none;
     line-height: 1.5rem;
 }
+#game-photo img {
+    width: 150px;
+    margin: auto;
+}
 
 #summary-badges {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
     max-width: 500px;
 }
 #summary-badges h2, #summary-badges p {
@@ -56,10 +67,7 @@
 }
 
 #summary-pokemon {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
     max-width: 200px;
 }
