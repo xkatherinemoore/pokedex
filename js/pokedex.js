@@ -154,24 +154,26 @@ const pokemonNames = [
     "Mew"
 ];
 
-//All Pokemon Types
-const pokemonTypes = [
-    "normal",
-    "fire",
-    "water",
-    "electric",
-    "grass",
-    "ice",
-    "fighting",
-    "poison",
-    "ground",
-    "flying",
-    "psychic",
-    "bug",
-    "rock",
-    "ghost",
-    "dragon"
-];
+//Pokemon by type (by pokedex number)
+const pokemonTypes = {
+    "normal" : [16,17,18,19,20,21,22,39,40,52,53,83,84,85,108,113,115,128,132,133,137,143],
+    "fire" : [4,5,6,37,38,58,59,77,78,126,136,146],
+    "water" : [7,8,9,54,55,60,61,62,72,73,79,80,86,87,90,91,98,99,116,117,118,119,120,121,129,130,131,134,138,139,140,141],
+    "electric" : [25,26,81,82,100,101,125,135,145],
+    "grass" : [1,2,3,43,44,45,46,47,69,70,71,102,103,114],
+    "ice" : [87,91,124,131,144],
+    "fighting" : [56,57,62,66,67,68,106,107],
+    "poison" : [1,2,3,13,14,15,23,24,29,30,31,32,33,34,41,42,43,44,45,48,49,69,70,71,72,73,88,89,92,93,94,109,110],
+    "ground" : [27,28,31,34,50,51,74,75,76,95,104,105,111,112],
+    "flying" : [6,12,16,17,18,21,22,41,42,83,84,85,123,130,142,144,145,146,149],
+    "psychic" : [63,64,65,79,80,96,97,102,103,121,122,124,150,151],
+    "bug" : [10,11,12,13,14,15,46,47,48,49,123,127],
+    "rock" : [74,75,76,95,111,112,138,139,140,141,142],
+    "ghost" : [92,93,94],
+    "dragon" : [147,148,149],
+    "steel": [81,82],
+    "fairy": [35,36,39,40,122]
+};
 
 //List of catchable pokemon in each game
 const pokemonNamesByGameVersion = {
@@ -1178,6 +1180,17 @@ for (let i = 0; i < pokemonNames.length; i++) {
     pokemonNamesByGameVersion['lgpikachu'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
     pokemonNamesByGameVersion['lgeevee'].includes(pokemonNames[i]) ? version.push(true) : version.push(false);
 
+    //Retrieve type from pokemonTypes array
+    let keys = Object.keys(pokemonTypes); //Pokemon types(keys) stored in array for iteration
+    let type = [];
+    //Compares pokemonTypes key/value pairs with i + 1 and pushes key into types
+    for (let j = 0; j < keys.length; j++) {
+        if (pokemonTypes[keys[j]].includes(i + 1)) {
+            type.push(keys[j]);
+        }
+    }
+
+
     //Create pokemon objects and add to pokedex array
     pokedex.push(
         {
@@ -1185,7 +1198,8 @@ for (let i = 0; i < pokemonNames.length; i++) {
             name: pokemonNames[i],
             imageURL: "./images/pokemon/" + (i + 1) + "_" + pokemonNames[i] + ".jpg",
             isCaught: false,
-            version: version
+            version: version,
+            type: type
         }
     )
 };
