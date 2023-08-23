@@ -11,7 +11,7 @@ let requireTrade;
 let noTradeRequired;
 let currentPokemonCount = 0;
 
-//Close Button/Display button show/hide for About Section on index.html
+//Close Button/Display button show/hide for About Section (index.html)
 $(document).ready(function () {
     $('#show-about').hide(); //Hides the reload button upon page load
 
@@ -29,7 +29,7 @@ $(document).ready(function () {
 
 });
 
-//When Game Version is selected, various data is updated on page
+//When Game Version is selected, various data is updated on page (index.html)
 document.querySelector('#game-version').addEventListener('change', (e) => {
     e.preventDefault();
     let version = e.target.value;
@@ -52,7 +52,7 @@ document.querySelector('#game-version').addEventListener('change', (e) => {
 
 });
 
-//Adds image when badge item is clicked
+//Adds image when badge item is clicked (index.html)
 $(document).ready(function () {
     $('.badge').click((e) => {
         e.preventDefault();
@@ -100,3 +100,65 @@ $(document).ready(function () {
         e.currentTarget.insertBefore(img, e.currentTarget.firstChild); //Adds img element to clicked div
     })
 });
+
+//Add Pokemon to Current Pokedex Table (index.html)
+let form = document.querySelector('#add-pokemon')
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let pokemon = e.target.pokemon.value; //Value is string "### - PokemonName"
+    pokemon = pokemon.split(" "); //Makes value an array ["###","-","PokemonName"]
+    pokemon[0] = Number.parseInt(pokemon[0]); //Number (###) used for lookup in pokedex array
+    
+    let index = pokedex.findIndex((p) => {  //Returns the index - data validation in case pokedex array was not sorted by pokemon.number
+        return p.number === pokemon[0];
+    }); 
+    pokedex[index].isCaught = true; 
+    let pokemonObj = pokedex[index]; 
+
+    let tbody = document.querySelector('#current-pokedex tbody');
+    let tr = document.createElement("tr");
+    let td_img = document.createElement("td");
+    let td_num = document.createElement("td");
+    let td_name = document.createElement("td");
+    let td_type = document.createElement("td");
+    let td_del = document.createElement("td");
+
+    //Add image to tr
+    let img = document.createElement("img");
+    img.setAttribute('src', pokemonObj.imageURL);
+    img.setAttribute('alt', "");
+    img.setAttribute('class', "pokeImg");
+    td_img.appendChild(img);
+    tr.appendChild(td_img);
+
+    //Add num to tr
+    td_num.textContent = pokemonObj.number;
+    tr.appendChild(td_num);
+
+    //Add name to tr
+    td_name.textContent = pokemonObj.name;
+    tr.appendChild(td_name);
+
+    //Add type to tr
+    for (let i = 0; i < pokemonObj["type"].length; i++) {
+        let span = document.createElement("span");
+        span.setAttribute('class', "type type-" + pokemonObj.type[i]);
+        span.textContent = pokemonObj.type[i];
+        td_type.appendChild(span);
+    }
+    tr.appendChild(td_type);
+
+    //Add delete button to tr
+    let delButton = document.createElement("button");
+    delButton.setAttribute('class', "delButton");
+    delButton.innerHTML = '<img src="images/trash3.svg" width="25" height="25">';
+    td_del.appendChild(delButton);
+    tr.appendChild(td_del);
+    
+    //Add tr to tbody (HTML)
+    tbody.appendChild(tr);
+
+    //Clear form
+    form.reset();
+})
