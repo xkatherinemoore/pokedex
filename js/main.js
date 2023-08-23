@@ -5,11 +5,16 @@ DATE: 08/16/2023
 FINAL PROJECT
 */
 
+/* 
+    INDEX.HTML 
+*/
 //Global variables
 let totalPokemon = 151;
 let requireTrade;
 let noTradeRequired;
 let currentPokemonCount = 0;
+let noTradePokemonCount = 0;
+let tradePokemonCount = 0;
 
 //Close Button/Display button show/hide for About Section (index.html)
 $(document).ready(function () {
@@ -42,13 +47,16 @@ document.querySelector('#game-version').addEventListener('change', (e) => {
     imgDiv.innerHTML = ""; //clear possible existing photo
     imgDiv.innerHTML = `<img src="${imgURL}" alt="${altText}">`; //Add in new photo to doc
 
-    //Outputs total pokemon in game and total that require trade based on game version
-    noTradeRequired = pokemonNamesByGameVersion[version].length;
-    tradeRequired = totalPokemon - noTradeRequired;
+    //Create arrays of pokemon that do/not require trade; used for counts
+    noTradeRequired = pokemonNamesByGameVersion[version];
+    tradeRequired = pokemonNames.filter((pokeName) => {
+        return pokemonNamesByGameVersion[version].indexOf(pokeName) === -1;
+    });
 
+    //Add count numbers to document
     document.querySelector('#total-count').textContent = currentPokemonCount + " / " + totalPokemon;
-    document.querySelector('#no-trade-count').textContent = currentPokemonCount + " / " + noTradeRequired;
-    document.querySelector('#trade-count').textContent = currentPokemonCount + " / " + tradeRequired;
+    document.querySelector('#no-trade-count').textContent = noTradePokemonCount + " / " + noTradeRequired.length;
+    document.querySelector('#trade-count').textContent = tradePokemonCount + " / " + tradeRequired.length;
 
 });
 
@@ -114,8 +122,9 @@ form.addEventListener('submit', (e) => {
         return p.number === pokemon[0];
     }); 
     pokedex[index].isCaught = true; 
-    let pokemonObj = pokedex[index]; 
+    let pokemonObj = pokedex[index]; //Pokemon Object from pokedex array
 
+    //Table elements
     let tbody = document.querySelector('#current-pokedex tbody');
     let tr = document.createElement("tr");
     let td_img = document.createElement("td");
@@ -151,14 +160,41 @@ form.addEventListener('submit', (e) => {
 
     //Add delete button to tr
     let delButton = document.createElement("button");
-    delButton.setAttribute('class', "delButton");
-    delButton.innerHTML = '<img src="images/trash3.svg" width="25" height="25">';
+    delButton.setAttribute("class", "delButton");
+    delButton.innerHTML = '<img class="delButton" src="images/trash3.svg" width="25" height="25">';
     td_del.appendChild(delButton);
     tr.appendChild(td_del);
     
     //Add tr to tbody (HTML)
     tbody.appendChild(tr);
 
+    //Increase Count & Update output
+    currentPokemonCount++;
+    if (noTradeRequired.includes(pokemonObj.name)) {noTradePokemonCount++}
+    if (tradeRequired.includes(pokemonObj.name)) {tradePokemonCount++}
+    document.querySelector('#total-count').textContent = currentPokemonCount + " / " + totalPokemon;
+    document.querySelector('#no-trade-count').textContent = noTradePokemonCount + " / " + noTradeRequired.length;
+    document.querySelector('#trade-count').textContent = tradePokemonCount + " / " + tradeRequired.length;
+
     //Clear form
     form.reset();
 })
+
+//Delete table entry - Used event delegation because .delButton does not exist with page load
+$(document).ready(() => {
+    $('#current-pokedex').click((e) => {
+        if (e.target.className === 'delButton') {
+            let button = e.target;
+            $(button).parentsUntil('tbody').remove();
+
+            //Decrease count & Update output
+            currentPokemonCount--;
+            if (noTradeRequired.includes(pokemonObj.name)) {noTradePokemonCount--}
+            if (tradeRequired.includes(pokemonObj.name)) {tradePokemonCount--}
+            document.querySelector('#total-count').textContent = currentPokemonCount + " / " + totalPokemon;
+            document.querySelector('#no-trade-count').textContent = noTradePokemonCount + " / " + noTradeRequired.length;
+            document.querySelector('#trade-count').textContent = tradePokemonCount + " / " + tradeRequired.length;
+        }
+    })
+});
+
