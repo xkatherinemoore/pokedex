@@ -10,11 +10,12 @@ FINAL PROJECT
 */
 //Global variables
 let totalPokemon = 151;
-let requireTrade;
-let noTradeRequired;
+let tradeRequired = [];
+let noTradeRequired = [];
 let currentPokemonCount = 0;
 let noTradePokemonCount = 0;
 let tradePokemonCount = 0;
+let version;
 
 //Close Button/Display button show/hide for About Section (index.html)
 $(document).ready(function () {
@@ -37,7 +38,7 @@ $(document).ready(function () {
 //When Game Version is selected, various data is updated on page (index.html)
 document.querySelector('#game-version').addEventListener('change', (e) => {
     e.preventDefault();
-    let version = e.target.value;
+    version = e.target.value;
 
     //Adds an image of the game version to the document
     let imgDiv = document.querySelector('#game-photo');
@@ -113,6 +114,10 @@ $(document).ready(function () {
 let form = document.querySelector('#add-pokemon')
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    //Message to user
+    if (!confirm("You do not have a Game Version selected. Any pokemon added at this time will not be counted towards game version totals. Do you want to continue?")) {
+        return;
+    }
 
     let pokemon = e.target.pokemon.value; //Value is string "### - PokemonName"
     pokemon = pokemon.split(" "); //Makes value an array ["###","-","PokemonName"]
@@ -170,8 +175,10 @@ form.addEventListener('submit', (e) => {
 
     //Increase Count & Update output
     currentPokemonCount++;
-    if (noTradeRequired.includes(pokemonObj.name)) {noTradePokemonCount++}
-    if (tradeRequired.includes(pokemonObj.name)) {tradePokemonCount++}
+    if (version) {
+        if (noTradeRequired.includes(pokemonObj.name)) {noTradePokemonCount++}
+        if (tradeRequired.includes(pokemonObj.name)) {tradePokemonCount++}
+    }
     document.querySelector('#total-count').textContent = currentPokemonCount + " / " + totalPokemon;
     document.querySelector('#no-trade-count').textContent = noTradePokemonCount + " / " + noTradeRequired.length;
     document.querySelector('#trade-count').textContent = tradePokemonCount + " / " + tradeRequired.length;
@@ -189,8 +196,10 @@ $(document).ready(() => {
 
             //Decrease count & Update output
             currentPokemonCount--;
-            if (noTradeRequired.includes(pokemonObj.name)) {noTradePokemonCount--}
-            if (tradeRequired.includes(pokemonObj.name)) {tradePokemonCount--}
+            if (version) {
+                if (noTradeRequired.includes(pokemonObj.name)) {noTradePokemonCount--}
+                if (tradeRequired.includes(pokemonObj.name)) {tradePokemonCount--}
+            }
             document.querySelector('#total-count').textContent = currentPokemonCount + " / " + totalPokemon;
             document.querySelector('#no-trade-count').textContent = noTradePokemonCount + " / " + noTradeRequired.length;
             document.querySelector('#trade-count').textContent = tradePokemonCount + " / " + tradeRequired.length;

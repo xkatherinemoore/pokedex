@@ -73,16 +73,22 @@ nav a.current {
 table {
     display: table;
     border-collapse: collapse;
-    margin: auto;
+    width: 100%;
 }
 
 th, td {
     vertical-align: middle;
+    text-align: center;
     border-width: 1px 0;
     border-style: solid;
     border-color: #000;
+    padding: 10px 20px;
 }
 
+.pokeImg {
+    width: 50px;
+    height: 50px;
+}
 
 .caught {
     background-color: #009966;
@@ -91,10 +97,12 @@ th, td {
 
 /* TYPE COLORS */
 .type {
+    display: block;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 5px;
 }
 .type-normal {
     background-color: gray;
