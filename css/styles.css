@@ -19,7 +19,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     gap: 20px;
     max-width: 1100px;
 }
@@ -29,7 +29,8 @@ body {
 }
 
 /* Header/Navbar */
-header, #brand {
+header,
+#brand {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -42,7 +43,9 @@ header, #brand {
     display: inherit;
     padding-right: 10px;
 }
-#brand h1, #brand a {
+
+#brand h1,
+#brand a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 28px;
@@ -52,6 +55,7 @@ header, #brand {
 header nav {
     display: inherit;
 }
+
 nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -59,9 +63,11 @@ nav a {
     margin: auto 5px;
     padding: 10px;
 }
+
 nav a:hover {
     font-style: italic;
 }
+
 nav a.current {
     background-color: #2e67b0;
     color: #f2c304;
@@ -76,7 +82,8 @@ table {
     width: 100%;
 }
 
-th, td {
+th,
+td {
     vertical-align: middle;
     text-align: center;
     border-width: 1px 0;
@@ -104,48 +111,96 @@ th, td {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     padding: 5px;
 }
+
 .type-normal {
     background-color: gray;
 }
+
 .type-fire {
     background-color: firebrick;
 }
+
 .type-water {
     background-color: blue;
 }
+
 .type-electric {
     background-color: darkgoldenrod;
 }
+
 .type-grass {
     background-color: darkgreen;
 }
+
 .type-ice {
     background-color: lightcyan;
 }
+
 .type-fighting {
     background-color: brown;
 }
+
 .type-poison {
     background-color: purple;
 }
+
 .type-ground {
     background-color: sienna;
 }
+
 .type-flying {
     background-color: deepskyblue;
 }
+
 .type-psychic {
     background-color: orchid;
 }
+
 .type-bug {
     background-color: springgreen;
 }
+
 .type-rock {
     background-color: tan;
 }
+
 .type-ghost {
     background-color: midnightblue;
 }
+
 .type-dragon {
     background-color: steelblue;
+}
+
+/* VERSION COLORS */
+.version {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 5px;
+}
+.version-red {
+    background-color: firebrick;
+}
+.version-blue {
+    background-color: blue;
+}
+.version-yellow {
+    background-color: goldenrod;
+}
+.version-leafgreen {
+    background-color: darkgreen;
+}
+.version-firered {
+    background-color: firebrick;
+    color: goldenrod;
+}
+.version-lgpikachu {
+    background-color: goldenrod;
+    color: midnightblue;
+}
+.version-lgeevee {
+    background-color: sienna;
 }
