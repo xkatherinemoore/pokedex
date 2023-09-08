@@ -1,0 +1,2134 @@
+<!-- 
+    NAME: Katherine Moore
+    MEID: KAT2341012
+    DATE: 08/16/2023
+    FINAL PROJECT
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="images/pokeball_icon_color.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="Pokemon, first gen, johto, pokemon red, pokemon blue, pokemon yellow, leafgreen, firered, let's go pikachu, let's go eevee">
+    <meta name="description"
+        content="Track your progress through any of the Kanto Region Pokemon games (Generations I, IV, and VII). Includes trackers for badges and pokedex information.">
+
+    <!--Google Font Import-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+    <!--Bootstrap Icon Library Import-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="brand">
+            <a href="index.html">
+                <img src="images/International_Pokémon_logo.svg.png" alt="Pokemon-logo">
+                <h1>Progress Tracker & Resource</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pokedex.html" class="current" active>Pokedex</a>
+            <a href="gymleader.html">Gym Leaders</a>
+            <a href="project.html">Project</a>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <table id="pokedex">
+                <thead>
+                    <tr>
+                        <th>Picture</th>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Version</th>
+                        <th>Caught?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/1_Bulbasaur.jpg" alt="" class="pokeImg"></td>
+                        <td>1</td>
+                        <td>Bulbasaur</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/2_Ivysaur.jpg" alt="" class="pokeImg"></td>
+                        <td>2</td>
+                        <td>Ivysaur</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/3_Venusaur.jpg" alt="" class="pokeImg"></td>
+                        <td>3</td>
+                        <td>Venusaur</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/4_Charmander.jpg" alt="" class="pokeImg"></td>
+                        <td>4</td>
+                        <td>Charmander</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/5_Charmeleon.jpg" alt="" class="pokeImg"></td>
+                        <td>5</td>
+                        <td>Charmeleon</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/6_Charizard.jpg" alt="" class="pokeImg"></td>
+                        <td>6</td>
+                        <td>Charizard</td>
+                        <td><span class="type type-fire">fire</span><span class="type type-flying">flying</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/7_Squirtle.jpg" alt="" class="pokeImg"></td>
+                        <td>7</td>
+                        <td>Squirtle</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/8_Wartortle.jpg" alt="" class="pokeImg"></td>
+                        <td>8</td>
+                        <td>Wartortle</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/9_Blastoise.jpg" alt="" class="pokeImg"></td>
+                        <td>9</td>
+                        <td>Blastoise</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/10_Caterpie.jpg" alt="" class="pokeImg"></td>
+                        <td>10</td>
+                        <td>Caterpie</td>
+                        <td><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/11_Metapod.jpg" alt="" class="pokeImg"></td>
+                        <td>11</td>
+                        <td>Metapod</td>
+                        <td><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/12_Butterfree.jpg" alt="" class="pokeImg"></td>
+                        <td>12</td>
+                        <td>Butterfree</td>
+                        <td><span class="type type-flying">flying</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/13_Weedle.jpg" alt="" class="pokeImg"></td>
+                        <td>13</td>
+                        <td>Weedle</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/14_Kakuna.jpg" alt="" class="pokeImg"></td>
+                        <td>14</td>
+                        <td>Kakuna</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/15_Beedrill.jpg" alt="" class="pokeImg"></td>
+                        <td>15</td>
+                        <td>Beedrill</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/16_Pidgey.jpg" alt="" class="pokeImg"></td>
+                        <td>16</td>
+                        <td>Pidgey</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/17_Pidgeotto.jpg" alt="" class="pokeImg"></td>
+                        <td>17</td>
+                        <td>Pidgeotto</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/18_Pidgeot.jpg" alt="" class="pokeImg"></td>
+                        <td>18</td>
+                        <td>Pidgeot</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/19_Rattata.jpg" alt="" class="pokeImg"></td>
+                        <td>19</td>
+                        <td>Rattata</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/20_Raticate.jpg" alt="" class="pokeImg"></td>
+                        <td>20</td>
+                        <td>Raticate</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/21_Spearow.jpg" alt="" class="pokeImg"></td>
+                        <td>21</td>
+                        <td>Spearow</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/22_Fearow.jpg" alt="" class="pokeImg"></td>
+                        <td>22</td>
+                        <td>Fearow</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/23_Ekans.jpg" alt="" class="pokeImg"></td>
+                        <td>23</td>
+                        <td>Ekans</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/24_Arbok.jpg" alt="" class="pokeImg"></td>
+                        <td>24</td>
+                        <td>Arbok</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/25_Pikachu.jpg" alt="" class="pokeImg"></td>
+                        <td>25</td>
+                        <td>Pikachu</td>
+                        <td><span class="type type-electric">electric</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/26_Raichu.jpg" alt="" class="pokeImg"></td>
+                        <td>26</td>
+                        <td>Raichu</td>
+                        <td><span class="type type-electric">electric</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/27_Sandshrew.jpg" alt="" class="pokeImg"></td>
+                        <td>27</td>
+                        <td>Sandshrew</td>
+                        <td><span class="type type-ground">ground</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/28_Sandslash.jpg" alt="" class="pokeImg"></td>
+                        <td>28</td>
+                        <td>Sandslash</td>
+                        <td><span class="type type-ground">ground</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/29_NidoranF.jpg" alt="" class="pokeImg"></td>
+                        <td>29</td>
+                        <td>NidoranF</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/30_Nidorina.jpg" alt="" class="pokeImg"></td>
+                        <td>30</td>
+                        <td>Nidorina</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/31_Nidoqueen.jpg" alt="" class="pokeImg"></td>
+                        <td>31</td>
+                        <td>Nidoqueen</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-ground">ground</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/32_NidoranM.jpg" alt="" class="pokeImg"></td>
+                        <td>32</td>
+                        <td>NidoranM</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/33_Nidorino.jpg" alt="" class="pokeImg"></td>
+                        <td>33</td>
+                        <td>Nidorino</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/34_Nidoking.jpg" alt="" class="pokeImg"></td>
+                        <td>34</td>
+                        <td>Nidoking</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-ground">ground</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/35_Clefairy.jpg" alt="" class="pokeImg"></td>
+                        <td>35</td>
+                        <td>Clefairy</td>
+                        <td><span class="type type-fairy">fairy</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/36_Clefable.jpg" alt="" class="pokeImg"></td>
+                        <td>36</td>
+                        <td>Clefable</td>
+                        <td><span class="type type-fairy">fairy</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/37_Vulpix.jpg" alt="" class="pokeImg"></td>
+                        <td>37</td>
+                        <td>Vulpix</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/38_Ninetales.jpg" alt="" class="pokeImg"></td>
+                        <td>38</td>
+                        <td>Ninetales</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/39_Jigglypuff.jpg" alt="" class="pokeImg"></td>
+                        <td>39</td>
+                        <td>Jigglypuff</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-fairy">fairy</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/40_Wigglytuff.jpg" alt="" class="pokeImg"></td>
+                        <td>40</td>
+                        <td>Wigglytuff</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-fairy">fairy</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/41_Zubat.jpg" alt="" class="pokeImg"></td>
+                        <td>41</td>
+                        <td>Zubat</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/42_Golbat.jpg" alt="" class="pokeImg"></td>
+                        <td>42</td>
+                        <td>Golbat</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/43_Oddish.jpg" alt="" class="pokeImg"></td>
+                        <td>43</td>
+                        <td>Oddish</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/44_Gloom.jpg" alt="" class="pokeImg"></td>
+                        <td>44</td>
+                        <td>Gloom</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/45_Vileplume.jpg" alt="" class="pokeImg"></td>
+                        <td>45</td>
+                        <td>Vileplume</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/46_Paras.jpg" alt="" class="pokeImg"></td>
+                        <td>46</td>
+                        <td>Paras</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/47_Parasect.jpg" alt="" class="pokeImg"></td>
+                        <td>47</td>
+                        <td>Parasect</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/48_Venonat.jpg" alt="" class="pokeImg"></td>
+                        <td>48</td>
+                        <td>Venonat</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/49_Venomoth.jpg" alt="" class="pokeImg"></td>
+                        <td>49</td>
+                        <td>Venomoth</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/50_Diglett.jpg" alt="" class="pokeImg"></td>
+                        <td>50</td>
+                        <td>Diglett</td>
+                        <td><span class="type type-ground">ground</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/51_Dugtrio.jpg" alt="" class="pokeImg"></td>
+                        <td>51</td>
+                        <td>Dugtrio</td>
+                        <td><span class="type type-ground">ground</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/52_Meowth.jpg" alt="" class="pokeImg"></td>
+                        <td>52</td>
+                        <td>Meowth</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/53_Persian.jpg" alt="" class="pokeImg"></td>
+                        <td>53</td>
+                        <td>Persian</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/54_Psyduck.jpg" alt="" class="pokeImg"></td>
+                        <td>54</td>
+                        <td>Psyduck</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/55_Golduck.jpg" alt="" class="pokeImg"></td>
+                        <td>55</td>
+                        <td>Golduck</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/56_Mankey.jpg" alt="" class="pokeImg"></td>
+                        <td>56</td>
+                        <td>Mankey</td>
+                        <td><span class="type type-fighting">fighting</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/57_Primeape.jpg" alt="" class="pokeImg"></td>
+                        <td>57</td>
+                        <td>Primeape</td>
+                        <td><span class="type type-fighting">fighting</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/58_Growlithe.jpg" alt="" class="pokeImg"></td>
+                        <td>58</td>
+                        <td>Growlithe</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/59_Arcanine.jpg" alt="" class="pokeImg"></td>
+                        <td>59</td>
+                        <td>Arcanine</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/60_Poliwag.jpg" alt="" class="pokeImg"></td>
+                        <td>60</td>
+                        <td>Poliwag</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/61_Poliwhirl.jpg" alt="" class="pokeImg"></td>
+                        <td>61</td>
+                        <td>Poliwhirl</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/62_Poliwrath.jpg" alt="" class="pokeImg"></td>
+                        <td>62</td>
+                        <td>Poliwrath</td>
+                        <td><span class="type type-water">water</span><span class="type type-fighting">fighting</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/63_Abra.jpg" alt="" class="pokeImg"></td>
+                        <td>63</td>
+                        <td>Abra</td>
+                        <td><span class="type type-psychic">psychic</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/64_Kadabra.jpg" alt="" class="pokeImg"></td>
+                        <td>64</td>
+                        <td>Kadabra</td>
+                        <td><span class="type type-psychic">psychic</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/65_Alakazam.jpg" alt="" class="pokeImg"></td>
+                        <td>65</td>
+                        <td>Alakazam</td>
+                        <td><span class="type type-psychic">psychic</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/66_Machop.jpg" alt="" class="pokeImg"></td>
+                        <td>66</td>
+                        <td>Machop</td>
+                        <td><span class="type type-fighting">fighting</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/67_Machoke.jpg" alt="" class="pokeImg"></td>
+                        <td>67</td>
+                        <td>Machoke</td>
+                        <td><span class="type type-fighting">fighting</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/68_Machamp.jpg" alt="" class="pokeImg"></td>
+                        <td>68</td>
+                        <td>Machamp</td>
+                        <td><span class="type type-fighting">fighting</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/69_Bellsprout.jpg" alt="" class="pokeImg"></td>
+                        <td>69</td>
+                        <td>Bellsprout</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/70_Weepinbell.jpg" alt="" class="pokeImg"></td>
+                        <td>70</td>
+                        <td>Weepinbell</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/71_Victreebel.jpg" alt="" class="pokeImg"></td>
+                        <td>71</td>
+                        <td>Victreebel</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/72_Tentacool.jpg" alt="" class="pokeImg"></td>
+                        <td>72</td>
+                        <td>Tentacool</td>
+                        <td><span class="type type-water">water</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/73_Tentacruel.jpg" alt="" class="pokeImg"></td>
+                        <td>73</td>
+                        <td>Tentacruel</td>
+                        <td><span class="type type-water">water</span><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/74_Geodude.jpg" alt="" class="pokeImg"></td>
+                        <td>74</td>
+                        <td>Geodude</td>
+                        <td><span class="type type-ground">ground</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/75_Graveler.jpg" alt="" class="pokeImg"></td>
+                        <td>75</td>
+                        <td>Graveler</td>
+                        <td><span class="type type-ground">ground</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/76_Golem.jpg" alt="" class="pokeImg"></td>
+                        <td>76</td>
+                        <td>Golem</td>
+                        <td><span class="type type-ground">ground</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/77_Ponyta.jpg" alt="" class="pokeImg"></td>
+                        <td>77</td>
+                        <td>Ponyta</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/78_Rapidash.jpg" alt="" class="pokeImg"></td>
+                        <td>78</td>
+                        <td>Rapidash</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/79_Slowpoke.jpg" alt="" class="pokeImg"></td>
+                        <td>79</td>
+                        <td>Slowpoke</td>
+                        <td><span class="type type-water">water</span><span class="type type-psychic">psychic</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/80_Slowbro.jpg" alt="" class="pokeImg"></td>
+                        <td>80</td>
+                        <td>Slowbro</td>
+                        <td><span class="type type-water">water</span><span class="type type-psychic">psychic</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/81_Magnemite.jpg" alt="" class="pokeImg"></td>
+                        <td>81</td>
+                        <td>Magnemite</td>
+                        <td><span class="type type-electric">electric</span><span class="type type-steel">steel</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/82_Magneton.jpg" alt="" class="pokeImg"></td>
+                        <td>82</td>
+                        <td>Magneton</td>
+                        <td><span class="type type-electric">electric</span><span class="type type-steel">steel</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/83_Farfetch'd.jpg" alt="" class="pokeImg"></td>
+                        <td>83</td>
+                        <td>Farfetch'd</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/84_Doduo.jpg" alt="" class="pokeImg"></td>
+                        <td>84</td>
+                        <td>Doduo</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/85_Dodrio.jpg" alt="" class="pokeImg"></td>
+                        <td>85</td>
+                        <td>Dodrio</td>
+                        <td><span class="type type-normal">normal</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/86_Seel.jpg" alt="" class="pokeImg"></td>
+                        <td>86</td>
+                        <td>Seel</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/87_Dewgong.jpg" alt="" class="pokeImg"></td>
+                        <td>87</td>
+                        <td>Dewgong</td>
+                        <td><span class="type type-water">water</span><span class="type type-ice">ice</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/88_Grimer.jpg" alt="" class="pokeImg"></td>
+                        <td>88</td>
+                        <td>Grimer</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/89_Muk.jpg" alt="" class="pokeImg"></td>
+                        <td>89</td>
+                        <td>Muk</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/90_Shellder.jpg" alt="" class="pokeImg"></td>
+                        <td>90</td>
+                        <td>Shellder</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/91_Cloyster.jpg" alt="" class="pokeImg"></td>
+                        <td>91</td>
+                        <td>Cloyster</td>
+                        <td><span class="type type-water">water</span><span class="type type-ice">ice</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/92_Gastly.jpg" alt="" class="pokeImg"></td>
+                        <td>92</td>
+                        <td>Gastly</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-ghost">ghost</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/93_Haunter.jpg" alt="" class="pokeImg"></td>
+                        <td>93</td>
+                        <td>Haunter</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-ghost">ghost</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/94_Gengar.jpg" alt="" class="pokeImg"></td>
+                        <td>94</td>
+                        <td>Gengar</td>
+                        <td><span class="type type-poison">poison</span><span class="type type-ghost">ghost</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/95_Onix.jpg" alt="" class="pokeImg"></td>
+                        <td>95</td>
+                        <td>Onix</td>
+                        <td><span class="type type-ground">ground</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/96_Drowzee.jpg" alt="" class="pokeImg"></td>
+                        <td>96</td>
+                        <td>Drowzee</td>
+                        <td><span class="type type-psychic">psychic</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/97_Hypno.jpg" alt="" class="pokeImg"></td>
+                        <td>97</td>
+                        <td>Hypno</td>
+                        <td><span class="type type-psychic">psychic</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/98_Krabby.jpg" alt="" class="pokeImg"></td>
+                        <td>98</td>
+                        <td>Krabby</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/99_Kingler.jpg" alt="" class="pokeImg"></td>
+                        <td>99</td>
+                        <td>Kingler</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/100_Voltorb.jpg" alt="" class="pokeImg"></td>
+                        <td>100</td>
+                        <td>Voltorb</td>
+                        <td><span class="type type-electric">electric</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/101_Electrode.jpg" alt="" class="pokeImg"></td>
+                        <td>101</td>
+                        <td>Electrode</td>
+                        <td><span class="type type-electric">electric</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/102_Exeggcute.jpg" alt="" class="pokeImg"></td>
+                        <td>102</td>
+                        <td>Exeggcute</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-psychic">psychic</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/103_Exeggutor.jpg" alt="" class="pokeImg"></td>
+                        <td>103</td>
+                        <td>Exeggutor</td>
+                        <td><span class="type type-grass">grass</span><span class="type type-psychic">psychic</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/104_Cubone.jpg" alt="" class="pokeImg"></td>
+                        <td>104</td>
+                        <td>Cubone</td>
+                        <td><span class="type type-ground">ground</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/105_Marowak.jpg" alt="" class="pokeImg"></td>
+                        <td>105</td>
+                        <td>Marowak</td>
+                        <td><span class="type type-ground">ground</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/106_Hitmonlee.jpg" alt="" class="pokeImg"></td>
+                        <td>106</td>
+                        <td>Hitmonlee</td>
+                        <td><span class="type type-fighting">fighting</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/107_Hitmonchan.jpg" alt="" class="pokeImg"></td>
+                        <td>107</td>
+                        <td>Hitmonchan</td>
+                        <td><span class="type type-fighting">fighting</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/108_Lickitung.jpg" alt="" class="pokeImg"></td>
+                        <td>108</td>
+                        <td>Lickitung</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/109_Koffing.jpg" alt="" class="pokeImg"></td>
+                        <td>109</td>
+                        <td>Koffing</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/110_Weezing.jpg" alt="" class="pokeImg"></td>
+                        <td>110</td>
+                        <td>Weezing</td>
+                        <td><span class="type type-poison">poison</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/111_Rhyhorn.jpg" alt="" class="pokeImg"></td>
+                        <td>111</td>
+                        <td>Rhyhorn</td>
+                        <td><span class="type type-ground">ground</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/112_Rhydon.jpg" alt="" class="pokeImg"></td>
+                        <td>112</td>
+                        <td>Rhydon</td>
+                        <td><span class="type type-ground">ground</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/113_Chansey.jpg" alt="" class="pokeImg"></td>
+                        <td>113</td>
+                        <td>Chansey</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/114_Tangela.jpg" alt="" class="pokeImg"></td>
+                        <td>114</td>
+                        <td>Tangela</td>
+                        <td><span class="type type-grass">grass</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/115_Kangaskhan.jpg" alt="" class="pokeImg"></td>
+                        <td>115</td>
+                        <td>Kangaskhan</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/116_Horsea.jpg" alt="" class="pokeImg"></td>
+                        <td>116</td>
+                        <td>Horsea</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/117_Seadra.jpg" alt="" class="pokeImg"></td>
+                        <td>117</td>
+                        <td>Seadra</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/118_Goldeen.jpg" alt="" class="pokeImg"></td>
+                        <td>118</td>
+                        <td>Goldeen</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/119_Seaking.jpg" alt="" class="pokeImg"></td>
+                        <td>119</td>
+                        <td>Seaking</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/120_Staryu.jpg" alt="" class="pokeImg"></td>
+                        <td>120</td>
+                        <td>Staryu</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/121_Starmie.jpg" alt="" class="pokeImg"></td>
+                        <td>121</td>
+                        <td>Starmie</td>
+                        <td><span class="type type-water">water</span><span class="type type-psychic">psychic</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/122_Mr. Mime.jpg" alt="" class="pokeImg"></td>
+                        <td>122</td>
+                        <td>Mr. Mime</td>
+                        <td><span class="type type-psychic">psychic</span><span class="type type-fairy">fairy</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/123_Scyther.jpg" alt="" class="pokeImg"></td>
+                        <td>123</td>
+                        <td>Scyther</td>
+                        <td><span class="type type-flying">flying</span><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-yellow">yellow</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/124_Jynx.jpg" alt="" class="pokeImg"></td>
+                        <td>124</td>
+                        <td>Jynx</td>
+                        <td><span class="type type-ice">ice</span><span class="type type-psychic">psychic</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/125_Electabuzz.jpg" alt="" class="pokeImg"></td>
+                        <td>125</td>
+                        <td>Electabuzz</td>
+                        <td><span class="type type-electric">electric</span></td>
+                        <td><span class="version version-red">red</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/126_Magmar.jpg" alt="" class="pokeImg"></td>
+                        <td>126</td>
+                        <td>Magmar</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/127_Pinsir.jpg" alt="" class="pokeImg"></td>
+                        <td>127</td>
+                        <td>Pinsir</td>
+                        <td><span class="type type-bug">bug</span></td>
+                        <td><span class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/128_Tauros.jpg" alt="" class="pokeImg"></td>
+                        <td>128</td>
+                        <td>Tauros</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/129_Magikarp.jpg" alt="" class="pokeImg"></td>
+                        <td>129</td>
+                        <td>Magikarp</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/130_Gyarados.jpg" alt="" class="pokeImg"></td>
+                        <td>130</td>
+                        <td>Gyarados</td>
+                        <td><span class="type type-water">water</span><span class="type type-flying">flying</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/131_Lapras.jpg" alt="" class="pokeImg"></td>
+                        <td>131</td>
+                        <td>Lapras</td>
+                        <td><span class="type type-water">water</span><span class="type type-ice">ice</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/132_Ditto.jpg" alt="" class="pokeImg"></td>
+                        <td>132</td>
+                        <td>Ditto</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/133_Eevee.jpg" alt="" class="pokeImg"></td>
+                        <td>133</td>
+                        <td>Eevee</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/134_Vaporeon.jpg" alt="" class="pokeImg"></td>
+                        <td>134</td>
+                        <td>Vaporeon</td>
+                        <td><span class="type type-water">water</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/135_Jolteon.jpg" alt="" class="pokeImg"></td>
+                        <td>135</td>
+                        <td>Jolteon</td>
+                        <td><span class="type type-electric">electric</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/136_Flareon.jpg" alt="" class="pokeImg"></td>
+                        <td>136</td>
+                        <td>Flareon</td>
+                        <td><span class="type type-fire">fire</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/137_Porygon.jpg" alt="" class="pokeImg"></td>
+                        <td>137</td>
+                        <td>Porygon</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/138_Omanyte.jpg" alt="" class="pokeImg"></td>
+                        <td>138</td>
+                        <td>Omanyte</td>
+                        <td><span class="type type-water">water</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/139_Omastar.jpg" alt="" class="pokeImg"></td>
+                        <td>139</td>
+                        <td>Omastar</td>
+                        <td><span class="type type-water">water</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/140_Kabuto.jpg" alt="" class="pokeImg"></td>
+                        <td>140</td>
+                        <td>Kabuto</td>
+                        <td><span class="type type-water">water</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/141_Kabutops.jpg" alt="" class="pokeImg"></td>
+                        <td>141</td>
+                        <td>Kabutops</td>
+                        <td><span class="type type-water">water</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/142_Aerodactyl.jpg" alt="" class="pokeImg"></td>
+                        <td>142</td>
+                        <td>Aerodactyl</td>
+                        <td><span class="type type-flying">flying</span><span class="type type-rock">rock</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/143_Snorlax.jpg" alt="" class="pokeImg"></td>
+                        <td>143</td>
+                        <td>Snorlax</td>
+                        <td><span class="type type-normal">normal</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/144_Articuno.jpg" alt="" class="pokeImg"></td>
+                        <td>144</td>
+                        <td>Articuno</td>
+                        <td><span class="type type-ice">ice</span><span class="type type-flying">flying</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/145_Zapdos.jpg" alt="" class="pokeImg"></td>
+                        <td>145</td>
+                        <td>Zapdos</td>
+                        <td><span class="type type-electric">electric</span><span class="type type-flying">flying</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/146_Moltres.jpg" alt="" class="pokeImg"></td>
+                        <td>146</td>
+                        <td>Moltres</td>
+                        <td><span class="type type-fire">fire</span><span class="type type-flying">flying</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/147_Dratini.jpg" alt="" class="pokeImg"></td>
+                        <td>147</td>
+                        <td>Dratini</td>
+                        <td><span class="type type-dragon">dragon</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/148_Dragonair.jpg" alt="" class="pokeImg"></td>
+                        <td>148</td>
+                        <td>Dragonair</td>
+                        <td><span class="type type-dragon">dragon</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/149_Dragonite.jpg" alt="" class="pokeImg"></td>
+                        <td>149</td>
+                        <td>Dragonite</td>
+                        <td><span class="type type-flying">flying</span><span class="type type-dragon">dragon</span>
+                        </td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/150_Mewtwo.jpg" alt="" class="pokeImg"></td>
+                        <td>150</td>
+                        <td>Mewtwo</td>
+                        <td><span class="type type-psychic">psychic</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/pokemon/151_Mew.jpg" alt="" class="pokeImg"></td>
+                        <td>151</td>
+                        <td>Mew</td>
+                        <td><span class="type type-psychic">psychic</span></td>
+                        <td><span class="version version-red">red</span><span
+                                class="version version-blue">blue</span><span
+                                class="version version-yellow">yellow</span><span
+                                class="version version-leafgreen">leafgreen</span><span
+                                class="version version-firered">firered</span><span
+                                class="version version-lgpikachu">lgpikachu</span><span
+                                class="version version-lgeevee">lgeevee</span></td>
+                        <td><img src="./images/pokeball_icon_gs.svg" alt="" width="25" height="25"></td>
+                    </tr>
+                </tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+<script src="js/pokedex.js"></script>
+<script src="js/pokedextable.js"></script>
+
+</html>
