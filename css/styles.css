@@ -174,7 +174,7 @@ td {
 
 /* VERSION COLORS */
 .version {
-    display: block;
+    display: inline-block;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -195,11 +195,9 @@ td {
 }
 .version-firered {
     background-color: firebrick;
-    color: goldenrod;
 }
 .version-lgpikachu {
     background-color: goldenrod;
-    color: midnightblue;
 }
 .version-lgeevee {
     background-color: sienna;
