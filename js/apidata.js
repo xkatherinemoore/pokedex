@@ -3,10 +3,9 @@ const baseURL = "https://pokeapi.co/api/v2/";
 const pokemonEndpoint = "pokemon/"
 const typeEndpoint = "type/"
 const locationEndpoint = "region/"
-let requestParam = "1";
 
 //GET Request for Pokemon data
-const getPokemonData = async () => {
+const getPokemonData = async (requestParam) => {
     const url = baseURL + pokemonEndpoint + requestParam;
     try {
         const response = await fetch(url);
@@ -20,17 +19,19 @@ const getPokemonData = async () => {
 };
 
 function handlePokemonData(jsonResponse) {
+    const name = jsonResponse.name;
     const moves = jsonResponse.moves;
     const types = jsonResponse.types;
     const pastTypes = jsonResponse.past_types;
 
+    console.log(jsonResponse);
     console.log(moves);
     console.log(types);
     console.log(pastTypes);
 }
 
 //GET Request for Type data
-const getTypeData = async () => {
+const getTypeData = async (requestParam) => {
     const url = baseURL + typeEndpoint + requestParam;
     try {
         const response = await fetch(url);
@@ -60,7 +61,7 @@ function handleTypeData(jsonResponse) {
 }
 
 //GET Request for Location data
-const getLocationData = async () => {
+const getLocationData = async (requestParam) => {
     const url = baseURL + locationEndpoint + requestParam;
     try {
         const response = await fetch(url);

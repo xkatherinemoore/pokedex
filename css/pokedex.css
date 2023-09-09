@@ -1,0 +1,9 @@
+#search {
+    text-align: center;
+    margin: 10px;
+}
+#search input, #search i {
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid black;
+}

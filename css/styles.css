@@ -171,7 +171,12 @@ td {
 .type-dragon {
     background-color: steelblue;
 }
-
+.type-fairy {
+    background-color: pink;
+}
+.type-steel {
+    background-color: lightgray;
+}
 /* VERSION COLORS */
 .version {
     display: inline-block;
@@ -180,6 +185,7 @@ td {
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     padding: 5px;
+    margin: 2px;
 }
 .version-red {
     background-color: firebrick;

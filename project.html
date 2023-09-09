@@ -44,15 +44,14 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="pokedex.html">Pokedex</a>
-            <a href="gymleader.html">Gym Leaders</a>
             <a href="project.html" class="current" active>Project</a>
         </nav>
     </header>
 
     <main>
         <h2>JavaScript Uses</h2>
-        <p>Please note that links to the relevant sections can be accessed by clicking on the list item.</p>
-        <h3>Game Progress Summary/Homepage (<a href="index.html">index.html</a>)</h3>
+        <p>All links within this section will open in a new tab</p>
+        <h3>Game Progress Summary/Homepage (<a href="index.html" target="_blank" rel="noopener noreferrer">index.html</a>)</h3>
         <ol>
             <li>Show/Hide About Section:
                 <p>The About Section (#about) display is toggled using buttons (#close-about & #open-about) and jQuery's .show() and .hide() methods. The div objects that are toggled are accessed using jQuery selectors, and when clicked, they will initiate the .show() and .hide() methods for the relevant divs.</p>
@@ -71,27 +70,47 @@
             </li>
         </ol>
 
+        <h3>Pokedex (<a href="pokedex.html" target="_blank" rel="noopener noreferrer">pokedex.html</a>)</h3>
+        <ol>
+            <li>Initial Table Render (js/pokedextable.js)
+                <p>The table located on the pokedex.html page was initially rendered using a JavaScript function. Each table element was created by iterating through the pokedex array. After the table was rendered in a browser, the HTML code was copied and added into the HTML document. This was done for efficiency purposes (so page content wasn't relying on a script to load). However, creating the table using a script was much easier and faster than if it had all been typed out by hand. The function used to render the table can be viewed at <a href="./js/pokedextable.js" target="_blank" rel="noopener noreferrer">js/pokedextable.js</a>. Note that this file is no longer loaded on any page.</p>
+            </li>
+            <li>Table Sort
+                <p>Users are able to sort the table by clicking on the header they want to sort by. Users are able to sort by Pokedex number, Pokemon name, or Pokemon Type. The sortTable function iterates through the table, comparing the value from the rows. The majority of this function was taken from <a href="https://www.w3schools.com/howto/howto_js_sort_table.asp" target="_blank" rel="noopener noreferrer">W3 Schools</a>, though their given code only allowed for alphabetical sorts. The code was updated to allow for the table to be sorted by numbers as well (switch statement). The sortTable function is called when the user clicks on a th element in the #pokedex table. jQuery was used to write this function.</p>
+            </li>
+            <li>Search Pokedex
+                <p>A search bar (#pokedex-search) can be used to filter/search the table. The input field triggers an event onkeyup, so the table will update while the user is typing and does not require the user to submit the search input. The function makes use of jQuery's filter and toggle methods. As the user types, the input value is compared against the table rows, and if no part of the row matches the input, the display is toggled (hidden). The #clear-search icon is used to remove a previous search without having to backspace within the input field.</p>
+            </li>
+            <li>Update Caught? Picture
+                <p>The user is able to indicate in the #pokedex table whether or not a pokemon has been caught. When they click on the PokeBall, the image will change to either grayscale or color based on the current value. This is done using jQuery and setting the img's src attribute value.</p>
+            </li>
+        </ol>
+
         <h2>Sources & Acknowledgments</h2>
         <h3>Links to Image Sources</h3>
-        <dl>
-            <dt><a href="#"><img src="images/International_Pokémon_logo.svg.png" alt="Pokemon logo" width="200px"></a></dt>
-            <dd>Image taken from <a
-                    href="https://commons.wikimedia.org/wiki/File:International_Pok%C3%A9mon_logo.svg">Wikimedia
-                    Commons</a></dd>
-
-            <dt><a href="#">Pokemon</a></dt>
-            <dd>Images taken from <a href="https://pokemondb.net/pokedex/game/red-blue-yellow">Pokemon Database</a></dd>
-
-            <dt><a href="#">Gym Badges</a></dt>
-            <dd>Images taken from <a href="https://bulbapedia.bulbagarden.net/wiki/Indigo_League">Bulbapedia</a></dd>
-        </dl>
+        <ul>
+            <li>
+                Pokemon Image Logo (Header on all pages)
+                <p>Image taken from <a
+                    href="https://commons.wikimedia.org/wiki/File:International_Pok%C3%A9mon_logo.svg" target="_blank" rel="noopener noreferrer">Wikimedia
+                    Commons</a></p>
+            </li>
+            <li>
+                Pokemon Images (index.html & pokedex.html)
+                <p>Images taken from <a href="https://pokemondb.net/pokedex/game/red-blue-yellow" target="_blank" rel="noopener noreferrer">Pokemon Database</a></p>
+            </li>
+            <li>
+                Gym Badge Images (index.html & gym.html)
+                <p>Images taken from <a href="https://bulbapedia.bulbagarden.net/wiki/Indigo_League" target="_blank" rel="noopener noreferrer">Bulbapedia</a></p>
+            </li>
+        </ul>
 
         <h3>Acknowledgments</h3>
         <p>While all of the content of this website (unless otherwise stated) was generated by me, it should be noted
             the role that others' work had in generating that content. This website wouldn't have been possible without
-            the information obtained from <a href="https://pokemondb.net/">Pokemon Database</a> and <a
-                href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a>. Both of these sites provide
-            consolidated resources for information that was then used to create this site.</p>
+            the information obtained from <a href="https://pokemondb.net/" target="_blank" rel="noopener noreferrer">Pokemon Database</a> and <a
+                href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank" rel="noopener noreferrer">Bulbapedia</a>. Both of these sites provide
+            consolidated resources for information that was then used to create this site. The <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">PokeAPI</a> was also used to retrieve detailed information used in the Pokedex.</p>
     </main>
     <footer class="text-center">
         <p>Pokemon images & names &copy; 1995-2023 Nintendo / Game Freak</p>
@@ -99,6 +118,6 @@
     </footer>
 
     <!--JS-->
-    <script src="js/pokedex.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/pokedexdata.js"></script>
+
 </body>
