@@ -18,6 +18,7 @@ function renderTable() {
         let td_type = document.createElement("td");
         let td_version = document.createElement("td")
         let td_caught = document.createElement("td");
+        let td_seeMore = document.createElement("td");
 
         //add pokemon image
         td_img.innerHTML = `<img src="${pokemon.imageURL}" alt="" class="pokeImg">`;
@@ -77,8 +78,12 @@ function renderTable() {
             pokeballURL = "./images/pokeball_icon_gs.svg";
         }
         
-        td_caught.innerHTML = `<img src="${pokeballURL}" alt="" width="25" height="25">`;
+        td_caught.innerHTML = `<img src="${pokeballURL}" alt="" class="caughtPic" width="35" height="35">`;
         tr.appendChild(td_caught);
+
+        //Add see more toggle
+        td_seeMore.innerHTML = '<i class="bi bi-caret-down-fill show-more"></i>';
+        tr.appendChild(td_seeMore);
 
         //add row to table
         tbody.appendChild(tr);
